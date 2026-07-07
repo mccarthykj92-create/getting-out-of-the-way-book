@@ -364,3 +364,17 @@ main { overflow: hidden; }
   border-color: #0b2f4f !important;
   color: #ffffff !important;
 }
+/* Force MailerLite button blue */
+.signup-form div.ml-form-embedSubmit button.primary {
+  background: #123f66 !important;
+  background-color: #123f66 !important;
+  border-color: #123f66 !important;
+  color: #ffffff !important;
+}
+
+.signup-form div.ml-form-embedSubmit button.primary:hover {
+  background: #0b2f4f !important;
+  background-color: #0b2f4f !important;
+  border-color: #0b2f4f !important;
+  color: #ffffff !important;
+}
