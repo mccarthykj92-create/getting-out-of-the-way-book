@@ -350,3 +350,17 @@ main { overflow: hidden; }
 .signup-form .ml-form-embedSubmit button span {
   color: #ffffff !important;
 }
+
+/* MailerLite submit button color */
+
+.signup-form form.ml-block-form .ml-form-embedSubmit button.primary {
+  background-color: #123f66 !important;
+  border-color: #123f66 !important;
+  color: #ffffff !important;
+}
+
+.signup-form form.ml-block-form .ml-form-embedSubmit button.primary:hover {
+  background-color: #0b2f4f !important;
+  border-color: #0b2f4f !important;
+  color: #ffffff !important;
+}
