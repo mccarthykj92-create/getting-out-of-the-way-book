@@ -168,3 +168,71 @@ main { overflow: hidden; }
   .site-footer { flex-direction: column; gap: 16px; }
   .site-footer nav { justify-content: flex-start; }
 }
+
+/* Small refinements */
+
+.hero-inner {
+  gap: clamp(36px, 5vw, 80px);
+}
+
+.hero h1 {
+  font-size: clamp(4rem, 8vw, 7.6rem);
+}
+
+.subtitle {
+  margin-top: clamp(30px, 3vw, 42px);
+  font-size: clamp(1.15rem, 1.55vw, 1.48rem);
+  line-height: 1.7;
+}
+
+.hero-book {
+  width: min(42vw, 520px);
+  padding-right: clamp(12px, 2vw, 32px);
+}
+
+.book {
+  filter: drop-shadow(0 28px 38px rgba(20, 20, 20, 0.075));
+  transition: transform 0.45s ease, filter 0.45s ease;
+}
+
+.book:hover {
+  transform: translateY(-4px);
+  filter: drop-shadow(0 34px 46px rgba(20, 20, 20, 0.09));
+}
+
+/* Philosophy sentence */
+
+.philosophy {
+  padding: clamp(76px, 10vw, 140px) 24px;
+  border-top: 1px solid rgba(216, 209, 198, 0.75);
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.philosophy-inner {
+  width: min(760px, 100%);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.philosophy h2 {
+  margin: 0;
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: clamp(1.9rem, 3.25vw, 2.75rem);
+  font-weight: 400;
+  line-height: 1.35;
+  letter-spacing: -0.04em;
+}
+
+/* Signup refinement */
+
+.signup-section {
+  padding-top: clamp(80px, 10vw, 132px);
+}
+
+.signup-copy p {
+  line-height: 1.85;
+}
+
+.signup-small {
+  opacity: 0.82;
+}
