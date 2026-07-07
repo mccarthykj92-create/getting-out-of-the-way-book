@@ -15,28 +15,28 @@ body {
   min-height: 100%;
   color: var(--ink);
   background:
-    radial-gradient(circle at 78% 14%, rgba(18, 63, 102, 0.055), transparent 34rem),
+    radial-gradient(circle at 78% 12%, rgba(18, 63, 102, 0.045), transparent 32rem),
     linear-gradient(180deg, var(--paper) 0%, var(--paper) 72%, var(--paper-deep) 100%);
   font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  line-height: 1.65;
+  line-height: 1.6;
 }
 img { display: block; max-width: 100%; }
 main { overflow: hidden; }
 
 .hero {
-  min-height: 100vh;
+  min-height: 92vh;
   display: flex;
   align-items: center;
-  padding: clamp(46px, 6vw, 86px) 0 clamp(82px, 10vw, 150px);
+  padding: clamp(34px, 4.5vw, 64px) 0 clamp(56px, 6.5vw, 92px);
 }
 
 .hero-inner {
-  width: min(1160px, calc(100% - 56px));
+  width: min(1100px, calc(100% - 56px));
   margin: 0 auto;
   display: grid;
-  grid-template-columns: minmax(360px, 0.86fr) minmax(300px, 470px);
+  grid-template-columns: minmax(340px, 0.88fr) minmax(280px, 410px);
   align-items: center;
-  gap: clamp(54px, 8vw, 118px);
+  gap: clamp(44px, 6.5vw, 94px);
 }
 
 .hero-copy { max-width: 540px; }
@@ -44,10 +44,10 @@ main { overflow: hidden; }
 .hero h1 {
   margin: 0;
   font-family: "Oswald", "Arial Narrow", Impact, sans-serif;
-  font-size: clamp(5rem, 9.8vw, 8.45rem);
+  font-size: clamp(4.55rem, 8.4vw, 7.35rem);
   font-weight: 700;
   line-height: 0.92;
-  letter-spacing: 0.045em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
 }
 
@@ -60,38 +60,38 @@ main { overflow: hidden; }
   background: var(--blue);
 }
 
-.small-rule { margin: clamp(26px, 3vw, 36px) 0 24px; }
+.small-rule { margin: clamp(22px, 2.4vw, 30px) 0 22px; }
 
 .subtitle {
   margin: 0;
   color: var(--ink);
-  font-size: clamp(0.92rem, 1.35vw, 1.16rem);
+  font-size: clamp(0.84rem, 1.05vw, 1rem);
   font-weight: 500;
   letter-spacing: 0.22em;
-  line-height: 1.65;
+  line-height: 1.6;
   text-transform: uppercase;
 }
 
 .hero-story {
-  max-width: 475px;
-  margin-top: clamp(34px, 4.8vw, 54px);
+  max-width: 500px;
+  margin-top: clamp(28px, 3.4vw, 42px);
   font-family: "Libre Baskerville", Georgia, serif;
-  font-size: clamp(1.08rem, 1.55vw, 1.28rem);
-  line-height: 1.78;
+  font-size: clamp(1rem, 1.28vw, 1.18rem);
+  line-height: 1.72;
 }
 
-.hero-story p { margin: 0 0 20px; }
+.hero-story p { margin: 0 0 17px; }
 .hero-story p:last-child { margin-bottom: 0; }
 
 .button {
   width: fit-content;
-  min-width: 300px;
-  margin-top: clamp(26px, 3vw, 34px);
+  min-width: 280px;
+  margin-top: clamp(22px, 2.4vw, 30px);
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 18px;
-  padding: 15px 28px;
+  padding: 14px 26px;
   background: var(--blue);
   color: #fff;
   border: 1px solid var(--blue);
@@ -111,7 +111,7 @@ main { overflow: hidden; }
 
 .button-note {
   max-width: 390px;
-  margin: 18px 0 0;
+  margin: 15px 0 0;
   color: var(--muted);
   font-size: 0.96rem;
   line-height: 1.7;
@@ -119,7 +119,9 @@ main { overflow: hidden; }
 
 .hero-book {
   justify-self: center;
-  width: min(40vw, 435px);
+  align-self: center;
+  width: min(36vw, 390px);
+  transform: translateY(-10px);
 }
 
 .book {
@@ -135,7 +137,7 @@ main { overflow: hidden; }
 }
 
 .closing-idea {
-  padding: clamp(88px, 11vw, 154px) 24px clamp(84px, 10vw, 136px);
+  padding: clamp(74px, 8.5vw, 120px) 24px clamp(74px, 8.5vw, 112px);
   border-top: 1px solid rgba(216, 209, 198, 0.65);
   background: rgba(255, 255, 255, 0.18);
 }
@@ -149,7 +151,7 @@ main { overflow: hidden; }
 .closing-idea h2 {
   margin: 0;
   font-family: "Libre Baskerville", Georgia, serif;
-  font-size: clamp(2rem, 4vw, 3.55rem);
+  font-size: clamp(1.95rem, 3.55vw, 3.2rem);
   font-weight: 400;
   line-height: 1.32;
   letter-spacing: -0.04em;
@@ -159,12 +161,12 @@ main { overflow: hidden; }
 .closing-idea .center-rule { margin: clamp(32px, 4vw, 46px) auto 0; }
 
 .signup-section {
-  padding: clamp(64px, 8vw, 104px) 24px clamp(48px, 7vw, 84px);
+  padding: clamp(58px, 7vw, 92px) 24px clamp(44px, 6vw, 72px);
   background: linear-gradient(180deg, rgba(243, 238, 230, 0.78), rgba(243, 238, 230, 0.48));
 }
 
 .signup-inner {
-  width: min(740px, 100%);
+  width: min(660px, 100%);
   margin: 0 auto;
   text-align: center;
 }
@@ -179,7 +181,7 @@ main { overflow: hidden; }
 }
 
 .signup-section p {
-  max-width: 540px;
+  max-width: 500px;
   margin: 0 auto 26px;
   color: #333b43;
   font-size: clamp(1rem, 1.25vw, 1.08rem);
@@ -192,7 +194,7 @@ main { overflow: hidden; }
 .signup-form .ml-form-embedContent, .signup-form .ml-form-embedPermissions, .signup-form .ml-form-checkboxRow, .signup-form .ml-form-recaptcha { display: none !important; }
 .signup-form .ml-form-formContent {
   display: grid !important;
-  grid-template-columns: minmax(240px, 1fr) minmax(210px, 260px) !important;
+  grid-template-columns: minmax(240px, 1fr) minmax(180px, 220px) !important;
   gap: 0 !important;
   align-items: stretch !important;
 }
@@ -230,6 +232,32 @@ main { overflow: hidden; }
 .signup-form .ml-form-embedSubmit button.primary:hover,
 .signup-form .ml-form-embedSubmit button[type="submit"]:hover { background: var(--blue-dark) !important; }
 
+
+/* Strong MailerLite overrides */
+.signup-section .ml-form-formContent {
+  max-width: 620px !important;
+  margin: 0 auto !important;
+}
+.signup-section .ml-form-embedSubmit button,
+.signup-section .ml-form-embedSubmit button.primary,
+.signup-section .ml-form-embedSubmit button[type="submit"],
+.signup-form .ml-form-embedSubmit button,
+.signup-form .ml-form-embedSubmit button.primary,
+.signup-form .ml-form-embedSubmit button[type="submit"] {
+  background: var(--blue) !important;
+  border-color: var(--blue) !important;
+  color: #fff !important;
+}
+.signup-section .ml-form-embedSubmit button:hover,
+.signup-section .ml-form-embedSubmit button.primary:hover,
+.signup-section .ml-form-embedSubmit button[type="submit"]:hover,
+.signup-form .ml-form-embedSubmit button:hover,
+.signup-form .ml-form-embedSubmit button.primary:hover,
+.signup-form .ml-form-embedSubmit button[type="submit"]:hover {
+  background: var(--blue-dark) !important;
+  border-color: var(--blue-dark) !important;
+}
+
 .signup-small {
   margin: 16px 0 0 !important;
   color: var(--muted) !important;
@@ -258,20 +286,20 @@ main { overflow: hidden; }
 .policy-content a { color: var(--blue); }
 
 @media (max-width: 900px) {
-  .hero { min-height: auto; align-items: start; }
-  .hero-inner { grid-template-columns: 1fr; gap: 44px; }
-  .hero-book { justify-self: start; width: min(74vw, 380px); order: -1; }
-  .hero h1 { font-size: clamp(4.2rem, 15vw, 6.6rem); }
+  .hero { min-height: auto; align-items: start; padding-bottom: 70px; }
+  .hero-inner { grid-template-columns: 1fr; gap: 38px; }
+  .hero-book { justify-self: start; width: min(72vw, 360px); order: -1; transform: none; }
+  .hero h1 { font-size: clamp(4rem, 14vw, 6.2rem); }
   .hero-story { max-width: 620px; }
   .button { min-width: 260px; }
 }
 
 @media (max-width: 680px) {
   .hero-inner, .site-footer { width: min(100% - 32px, 620px); }
-  .hero { padding-top: 34px; padding-bottom: 70px; }
+  .hero { padding-top: 30px; padding-bottom: 62px; }
   .hero h1 { letter-spacing: 0.025em; }
   .subtitle { letter-spacing: 0.17em; }
-  .hero-story { font-size: 1.02rem; }
+  .hero-story { font-size: 1rem; line-height: 1.68; }
   .button { width: 100%; min-width: 0; }
   .button-note { max-width: none; }
   .closing-idea, .signup-section { padding-left: 18px; padding-right: 18px; }
