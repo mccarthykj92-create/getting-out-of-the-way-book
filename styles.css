@@ -453,3 +453,28 @@ main {
     justify-content: flex-start;
   }
 }
+
+.signup-form button:disabled {
+  opacity: 0.75;
+  cursor: wait;
+}
+
+.signup-success {
+  padding: 2rem;
+  background: #fff;
+  border: 1px solid #d7d2ca;
+  border-radius: 8px;
+}
+
+.signup-success h3 {
+  margin: 0 0 0.75rem;
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--blue);
+}
+
+.signup-success p {
+  margin: 0;
+  color: var(--muted);
+}
