@@ -391,3 +391,26 @@ main { overflow: hidden; }
   border-color: #0b2f4f !important;
   color: #ffffff !important;
 }
+
+/* Beat MailerLite's embedded button style */
+body .signup-form #mlb2-43367631.ml-form-embedContainer
+.ml-form-embedWrapper
+.ml-form-embedBody
+.ml-form-embedSubmit
+button.primary {
+  background: #123f66 !important;
+  background-color: #123f66 !important;
+  border: 1px solid #123f66 !important;
+  color: #ffffff !important;
+}
+
+body .signup-form #mlb2-43367631.ml-form-embedContainer
+.ml-form-embedWrapper
+.ml-form-embedBody
+.ml-form-embedSubmit
+button.primary:hover {
+  background: #0b2f4f !important;
+  background-color: #0b2f4f !important;
+  border-color: #0b2f4f !important;
+  color: #ffffff !important;
+}
