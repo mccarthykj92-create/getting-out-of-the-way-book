@@ -308,3 +308,33 @@ main { overflow: hidden; }
   .site-footer { flex-direction: column; gap: 16px; }
   .site-footer nav { justify-content: flex-start; }
 }
+
+/* Fix MailerLite field/button width */
+
+.signup-form {
+  width: min(560px, 100%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.signup-form .ml-form-formContent {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  gap: 14px !important;
+}
+
+.signup-form .ml-form-fieldRow,
+.signup-form .ml-form-embedSubmit,
+.signup-form .ml-form-fieldRow input,
+.signup-form input,
+.signup-form button {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.signup-form .ml-form-embedSubmit button,
+.signup-form .ml-form-embedSubmit button.primary,
+.signup-form .ml-form-embedSubmit button[type="submit"] {
+  background: var(--blue) !important;
+  border-color: var(--blue) !important;
+}
