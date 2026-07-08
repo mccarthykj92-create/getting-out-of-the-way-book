@@ -518,3 +518,8 @@ main {
   border-color: #123f66 !important;
   font-weight: 700 !important;
 }
+
+.signup-form {
+  max-width: 720px;
+  margin: 0 auto;
+}
