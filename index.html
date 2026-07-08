@@ -64,17 +64,30 @@
         <p>The book isn’t available yet, but I’d love to keep you updated as it moves toward publication.</p>
 
         <div class="signup-form custom-signup">
-  <form id="signupForm">
- 
-  <input
-    type="email"
-    name="email"
-    placeholder="Your email"
-    required
+  <div class="signup-form custom-signup">
+  <form
+    id="signupForm"
+    action="https://assets.mailerlite.com/jsonp/2488984/forms/192025841018865620/subscribe"
+    method="post"
+    target="signupHiddenFrame"
   >
+    <input type="hidden" name="ml-submit" value="1">
+    <input type="hidden" name="anticsrf" value="true">
 
-  <button type="submit">Keep Me Updated</button>
-</form>
+    <input
+      type="email"
+      name="fields[email]"
+      placeholder="Your email"
+      required
+    >
+
+    <button type="submit">Keep Me Updated</button>
+  </form>
+
+  <iframe name="signupHiddenFrame" style="display:none;"></iframe>
+
+  <p class="signup-small">No spam. Unsubscribe anytime.</p>
+</div>
 
   <p class="signup-small">No spam. Unsubscribe anytime.</p>
 </div>
@@ -92,38 +105,20 @@
   <script>
   const signupForm = document.getElementById("signupForm");
 
-  signupForm.addEventListener("submit", async function (event) {
-    event.preventDefault();
-
+  signupForm.addEventListener("submit", function () {
     const button = signupForm.querySelector("button");
-    const originalText = button.textContent;
 
     button.disabled = true;
     button.textContent = "Joining...";
 
-    try {
-      const formData = new FormData(signupForm);
-
-      const response = await fetch("/subscribe", {
-        method: "POST",
-        body: formData
-      });
-
-      if (!response.ok) {
-        throw new Error("Signup failed");
-      }
-
+    setTimeout(function () {
       signupForm.innerHTML = `
         <div class="signup-success">
           <h3>You're on the journey.</h3>
           <p>Thanks for joining me. I’ll send occasional updates as the book moves toward publication.</p>
         </div>
       `;
-    } catch (error) {
-      button.disabled = false;
-      button.textContent = originalText;
-      alert("Something went wrong. Please try again in a moment.");
-    }
+    }, 900);
   });
 </script>
 </body>
