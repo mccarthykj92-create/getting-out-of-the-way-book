@@ -103,23 +103,23 @@
     </nav>
   </footer>
   <script>
-  const signupForm = document.getElementById("signupForm");
+const signupForm = document.getElementById("signupForm");
 
-  signupForm.addEventListener("submit", function () {
-    const button = signupForm.querySelector("button");
+signupForm.addEventListener("submit", function () {
+  const button = signupForm.querySelector("button");
 
-    button.disabled = true;
-    button.textContent = "Joining...";
+  button.disabled = true;
+  button.textContent = "Joining...";
 
-    setTimeout(function () {
-      signupForm.innerHTML = `
-        <div class="signup-success">
-          <h3>You're on the journey.</h3>
-          <p>Thanks for joining me. I’ll send occasional updates as the book moves toward publication.</p>
-        </div>
-      `;
-    }, 900);
-  });
+  setTimeout(function () {
+    signupForm.innerHTML = `
+      <div class="signup-success">
+        <h3>You're on the journey.</h3>
+        <p>Thanks for joining me. I’ll send occasional updates as the book moves toward publication.</p>
+      </div>
+    `;
+  }, 900);
+});
 </script>
 </body>
 </html>
