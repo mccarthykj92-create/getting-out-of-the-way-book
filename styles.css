@@ -478,3 +478,43 @@ main {
   margin: 0;
   color: var(--muted);
 }
+
+/* Clean up MailerLite embed */
+.signup-form .ml-form-embedWrapper {
+  background: transparent !important;
+  padding: 0 !important;
+  max-width: 100% !important;
+  box-shadow: none !important;
+}
+
+.signup-form .ml-form-embedContent {
+  display: none !important;
+}
+
+.signup-form .ml-form-formContent {
+  margin: 0 !important;
+}
+
+.signup-form .ml-form-fieldRow {
+  margin: 0 !important;
+}
+
+.signup-form input {
+  height: 68px !important;
+  border-radius: 8px 8px 0 0 !important;
+  border: 1px solid #d7d2ca !important;
+  border-bottom: none !important;
+  font-size: 1.15rem !important;
+}
+
+.signup-form .ml-form-embedSubmit {
+  margin: 0 !important;
+}
+
+.signup-form .ml-form-embedSubmit button {
+  height: 64px !important;
+  border-radius: 0 0 8px 8px !important;
+  background: #123f66 !important;
+  border-color: #123f66 !important;
+  font-weight: 700 !important;
+}
