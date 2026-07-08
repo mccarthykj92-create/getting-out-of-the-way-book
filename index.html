@@ -64,9 +64,14 @@
         <p>The book isn’t available yet, but I’d love to keep you updated as it moves toward publication.</p>
 
         <div class="signup-form custom-signup">
-  <<form action="/subscribe" method="post">
-  <input type="hidden" name="ml-submit" value="1">
-  <input type="hidden" name="anticsrf" value="true">
+  <form id="signupForm">
+  <form id="signupForm">
+        <input
+            type="email"
+             name="email"
+             placeholder="Your email"
+             required
+  >
 
   <input
     type="email"
@@ -91,5 +96,42 @@
       <a href="mailto:hello@example.com">Contact</a>
     </nav>
   </footer>
+  <script>
+  const signupForm = document.getElementById("signupForm");
+
+  signupForm.addEventListener("submit", async function (event) {
+    event.preventDefault();
+
+    const button = signupForm.querySelector("button");
+    const originalText = button.textContent;
+
+    button.disabled = true;
+    button.textContent = "Joining...";
+
+    try {
+      const formData = new FormData(signupForm);
+
+      const response = await fetch("/subscribe", {
+        method: "POST",
+        body: formData
+      });
+
+      if (!response.ok) {
+        throw new Error("Signup failed");
+      }
+
+      signupForm.innerHTML = `
+        <div class="signup-success">
+          <h3>You're on the journey.</h3>
+          <p>Thanks for joining me. I’ll send occasional updates as the book moves toward publication.</p>
+        </div>
+      `;
+    } catch (error) {
+      button.disabled = false;
+      button.textContent = originalText;
+      alert("Something went wrong. Please try again in a moment.");
+    }
+  });
+</script>
 </body>
 </html>
