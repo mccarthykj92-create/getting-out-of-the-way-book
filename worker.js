@@ -24,9 +24,17 @@ export default {
           }
         );
 
-        if (!response.ok && response.status !== 409 && response.status !== 422) {
-          return Response.json({ ok: false }, { status: 500 });
-        }
+       if (!response.ok && response.status !== 409 && response.status !== 422) {
+  return Response.json(
+    {
+      ok: false,
+      status: response.status,
+      text: await response.text(),
+      hasToken: Boolean(env.MAILERLITE_API_TOKEN)
+    },
+    { status: 500 }
+  );
+}
 
         return Response.json({ ok: true });
       } catch (err) {
