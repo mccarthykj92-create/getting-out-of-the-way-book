@@ -15,7 +15,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 
+  <!-- MailerLite Universal -->
+  <script>
+    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+    ml('account', '2488984');
+  </script>
+  <!-- End MailerLite Universal -->
 </head>
+
 <body>
   <main>
     <section class="hero" aria-labelledby="site-title">
@@ -63,34 +73,10 @@
         <h2 id="signup-title">Follow the journey.</h2>
         <p>The book isn’t available yet, but I’d love to keep you updated as it moves toward publication.</p>
 
-        <div class="signup-form custom-signup">
-  <div class="signup-form custom-signup">
-  <form
-    id="signupForm"
-    action="https://assets.mailerlite.com/jsonp/2488984/forms/192025841018865620/subscribe"
-    method="post"
-    target="signupHiddenFrame"
-  >
-    <input type="hidden" name="ml-submit" value="1">
-    <input type="hidden" name="anticsrf" value="true">
-
-    <input
-      type="email"
-      name="fields[email]"
-      placeholder="Your email"
-      required
-    >
-
-    <button type="submit">Keep Me Updated</button>
-  </form>
-
-  <iframe name="signupHiddenFrame" style="display:none;"></iframe>
-
-  <p class="signup-small">No spam. Unsubscribe anytime.</p>
-</div>
-
-  <p class="signup-small">No spam. Unsubscribe anytime.</p>
-</div>
+        <div class="signup-form">
+          <div class="ml-embedded" data-form="kvaGo1"></div>
+          <p class="signup-small">No spam. Unsubscribe anytime.</p>
+        </div>
       </div>
     </section>
   </main>
@@ -102,24 +88,5 @@
       <a href="mailto:hello@example.com">Contact</a>
     </nav>
   </footer>
-  <script>
-const signupForm = document.getElementById("signupForm");
-
-signupForm.addEventListener("submit", function () {
-  const button = signupForm.querySelector("button");
-
-  button.disabled = true;
-  button.textContent = "Joining...";
-
-  setTimeout(function () {
-    signupForm.innerHTML = `
-      <div class="signup-success">
-        <h3>You're on the journey.</h3>
-        <p>Thanks for joining me. I’ll send occasional updates as the book moves toward publication.</p>
-      </div>
-    `;
-  }, 900);
-});
-</script>
 </body>
 </html>
