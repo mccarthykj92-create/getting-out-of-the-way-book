@@ -523,3 +523,7 @@ main {
   max-width: 720px;
   margin: 0 auto;
 }
+
+.hero-book:hover .book {
+    transform: translateY(-8px);
+}
