@@ -154,13 +154,11 @@ main {
 .book {
   width: 100%;
   height: auto;
-  filter: drop-shadow(0 28px 38px rgba(20, 20, 20, 0.105));
-  transition: transform 0.45s ease, filter 0.45s ease;
+  transition: transform 0.45s ease;
 }
 
-.book:hover {
-  transform: translateY(-4px);
-  filter: drop-shadow(0 34px 46px rgba(20, 20, 20, 0.13));
+.hero-book:hover .book {
+  transform: translateY(-8px);
 }
 
 /* Closing Idea */
@@ -480,6 +478,7 @@ main {
 }
 
 /* Clean up MailerLite embed */
+
 .signup-form .ml-form-embedWrapper {
   background: transparent !important;
   padding: 0 !important;
@@ -522,8 +521,4 @@ main {
 .signup-form {
   max-width: 720px;
   margin: 0 auto;
-}
-
-.hero-book:hover .book {
-    transform: translateY(-8px);
 }
