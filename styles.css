@@ -1,11 +1,11 @@
 :root {
-  --paper: #fbfaf6;
-  --paper-deep: #f2ede5;
-  --ink: #151515;
-  --muted: #5c646c;
-  --blue: #123f66;
-  --blue-dark: #0b2f4f;
-  --line: #d8d1c6;
+  --paper: #f4efe6;
+  --paper-deep: #e9dfd1;
+  --ink: #1c1a17;
+  --muted: #756f66;
+  --blue: #294d68;
+  --blue-dark: #1f3b50;
+  --line: #d6c7b5;
 }
 
 * {
@@ -22,7 +22,7 @@ body {
   min-height: 100%;
   color: var(--ink);
   background:
-    radial-gradient(circle at 78% 12%, rgba(18, 63, 102, 0.045), transparent 32rem),
+    radial-gradient(circle at 78% 12%, rgba(41, 77, 104, 0.055), transparent 32rem),
     linear-gradient(180deg, var(--paper) 0%, var(--paper) 72%, var(--paper-deep) 100%);
   font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.6;
@@ -165,8 +165,8 @@ main {
 
 .closing-idea {
   padding: clamp(74px, 8.5vw, 120px) 24px clamp(74px, 8.5vw, 112px);
-  border-top: 1px solid rgba(216, 209, 198, 0.65);
-  background: rgba(255, 255, 255, 0.18);
+  border-top: 1px solid rgba(214, 199, 181, 0.72);
+  background: rgba(255, 252, 247, 0.24);
 }
 
 .closing-inner {
@@ -196,7 +196,7 @@ main {
 
 .signup-section {
   padding: clamp(58px, 7vw, 92px) 24px clamp(44px, 6vw, 72px);
-  background: linear-gradient(180deg, rgba(243, 238, 230, 0.78), rgba(243, 238, 230, 0.48));
+  background: linear-gradient(180deg, rgba(233, 223, 209, 0.82), rgba(244, 239, 230, 0.52));
 }
 
 .signup-inner {
@@ -217,7 +217,7 @@ main {
 .signup-section p {
   max-width: 500px;
   margin: 0 auto 26px;
-  color: #333b43;
+  color: #4b453e;
   font-size: clamp(1rem, 1.25vw, 1.08rem);
   line-height: 1.72;
 }
@@ -241,9 +241,9 @@ main {
   padding: 0 1.5rem;
   font-family: "Inter", sans-serif;
   font-size: 1.15rem;
-  color: #1a1a1a;
-  background: #fff;
-  border: 1px solid #d7d2ca;
+  color: var(--ink);
+  background: #fffcf7;
+  border: 1px solid var(--line);
   border-bottom: none;
   border-radius: 8px 8px 0 0;
   outline: none;
@@ -251,12 +251,12 @@ main {
 }
 
 .signup-form input[type="email"]::placeholder {
-  color: #9a9a9a;
+  color: #91887d;
 }
 
 .signup-form input[type="email"]:focus {
   border-color: var(--blue);
-  box-shadow: 0 0 0 3px rgba(18, 63, 102, 0.12);
+  box-shadow: 0 0 0 3px rgba(41, 77, 104, 0.14);
 }
 
 .signup-form button {
@@ -301,7 +301,7 @@ main {
   display: flex;
   justify-content: space-between;
   gap: 28px;
-  border-top: 1px solid rgba(216, 209, 198, 0.8);
+  border-top: 1px solid rgba(214, 199, 181, 0.86);
   color: var(--muted);
 }
 
@@ -346,7 +346,7 @@ main {
 }
 
 .policy-content p {
-  color: #252b31;
+  color: #3d3934;
   font-size: 1rem;
   line-height: 1.78;
 }
@@ -459,8 +459,8 @@ main {
 
 .signup-success {
   padding: 2rem;
-  background: #fff;
-  border: 1px solid #d7d2ca;
+  background: #fffcf7;
+  border: 1px solid var(--line);
   border-radius: 8px;
 }
 
@@ -501,7 +501,7 @@ main {
 .signup-form input {
   height: 68px !important;
   border-radius: 8px 8px 0 0 !important;
-  border: 1px solid #d7d2ca !important;
+  border: 1px solid var(--line) !important;
   border-bottom: none !important;
   font-size: 1.15rem !important;
 }
@@ -513,12 +513,7 @@ main {
 .signup-form .ml-form-embedSubmit button {
   height: 64px !important;
   border-radius: 0 0 8px 8px !important;
-  background: #123f66 !important;
-  border-color: #123f66 !important;
+  background: var(--blue) !important;
+  border-color: var(--blue) !important;
   font-weight: 700 !important;
-}
-
-.signup-form {
-  max-width: 720px;
-  margin: 0 auto;
 }
