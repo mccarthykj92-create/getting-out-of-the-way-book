@@ -192,6 +192,60 @@ main {
   margin: clamp(32px, 4vw, 46px) auto 0;
 }
 
+/* Testimonial */
+
+.testimonial-section {
+  padding: clamp(64px, 8vw, 104px) 24px;
+  border-top: 1px solid rgba(214, 199, 181, 0.72);
+}
+
+.testimonial {
+  width: min(780px, 100%);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.testimonial blockquote {
+  margin: 0;
+}
+
+.testimonial blockquote p {
+  margin: 0;
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: clamp(1.3rem, 2.25vw, 1.85rem);
+  font-weight: 400;
+  line-height: 1.65;
+  letter-spacing: -0.025em;
+}
+
+.testimonial figcaption {
+  margin-top: clamp(28px, 3.5vw, 38px);
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+.testimonial figcaption::before {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 2px;
+  margin: 0 auto 22px;
+  background: var(--blue);
+}
+
+.testimonial cite,
+.testimonial figcaption span {
+  display: block;
+}
+
+.testimonial cite {
+  margin-bottom: 3px;
+  color: var(--ink);
+  font-style: normal;
+  font-weight: 700;
+}
+
 /* Signup Section */
 
 .signup-section {
@@ -423,9 +477,14 @@ main {
   }
 
   .closing-idea,
+  .testimonial-section,
   .signup-section {
     padding-left: 18px;
     padding-right: 18px;
+  }
+
+  .testimonial blockquote p {
+    line-height: 1.55;
   }
 
   .signup-form {
