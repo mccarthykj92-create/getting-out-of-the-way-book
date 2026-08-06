@@ -197,7 +197,7 @@ main {
 .testimonial-section {
   padding: clamp(54px, 6vw, 78px) 24px;
   border-top: 1px solid rgba(214, 199, 181, 0.72);
-  background: rgba(41, 77, 104, 0.04);
+  background: rgba(233, 223, 209, 0.48);
 }
 
 .testimonial {
